@@ -1,9 +1,12 @@
 echo
 echo "PiGame Installer"
 echo
+echo "BETA!!!"
 echo "Must run as root"
 echo "Press any key:"
 read -n 1 TMPTRASH
+git clone https://github.com/pigamedrv/pigame.git
+git clone https://github.com/pigamedrv/pitft_touchscreen.git
 echo "Rotation:"
 read ROTATION
 echo $ROTATION > /etc/pigame.conf
@@ -15,6 +18,7 @@ cd ..
 echo "Enter 'n' to not install pigameui (not recommened), else enter anything else (recommened)"
 read -n 1 PIGAMEUI
 if [ ! x$PIGAMEUI == xn ];then
+	git clone https://github.com/pigamedrv/pigameui.git
 	cd pigameui
 	python3 setup.py install
 	cd ..
