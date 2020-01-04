@@ -6,4 +6,3 @@ Created using [selfex](https://github.com/nift4/selfex)<br/>
 Because it's open source, here's how to build the installer:
 Clone it and run `./selfex/build`. `object.bin` is now built.
 `object.bin` is renamed to `installer.bin` in Releases.
-And finish!
